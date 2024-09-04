@@ -1,1 +1,1 @@
-synapse-s3-storage-provider~=1.4.0
+synapse-s3-storage-provider~=1.5.0
