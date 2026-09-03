@@ -1,3 +1,3 @@
-FROM matrixdotorg/synapse:v1.159.0
+FROM matrixdotorg/synapse:v1.160.0
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt && rm /tmp/requirements.txt
