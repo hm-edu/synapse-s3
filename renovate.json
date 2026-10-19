@@ -1,6 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-"config:recommended"
+  "extends": ["github>hm-edu/renovate-config:container"],
+  "packageRules": [
+    {
+      "description": "Synapse base image: minor releases are the point of this repo, automerge them like patches (majors stay manual). Each merge becomes a release and ends up on matrix.hm.edu via zit/matrix.",
+      "matchPackageNames": ["matrixdotorg/synapse"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true
+    }
   ]
 }
